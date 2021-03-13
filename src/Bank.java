@@ -1,5 +1,8 @@
 package src;
 
+import src.exception.InvalidLogin;
+import src.exception.InvalidSession;
+
 import java.math.BigDecimal;
 import java.rmi.*;
 import java.util.Date;
@@ -12,7 +15,7 @@ public class Bank implements BankInterface {
         super();
     }
     public long login(String username, String password) throws RemoteException, InvalidLogin {
-
+        return 0;
     }
     public void deposit(int account, BigDecimal amount, long sessionID) throws RemoteException, InvalidSession {
     // implementation code
@@ -21,10 +24,10 @@ public class Bank implements BankInterface {
     // implementation code
     }
     public BigDecimal getBalance(int account, long sessionID) throws RemoteException, InvalidSession {
-    // implementation code
+        return null;
     }
     public Statement getStatement(Date from, Date to, long sessionID) throws RemoteException, InvalidSession {
-    // implementation code
+        return null;
     }
     public static void main(String args[]) throws Exception {
     // initialise Bank server - see sample code in the notes and online RMI tutorials for details

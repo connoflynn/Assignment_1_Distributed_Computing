@@ -1,3 +1,8 @@
+package src;
+
+import src.exception.InvalidLogin;
+import src.exception.InvalidSession;
+
 import java.rmi.Remote;
 import java.util.Date;
 import java.math.BigDecimal;
