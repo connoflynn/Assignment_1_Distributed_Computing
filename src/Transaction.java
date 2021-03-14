@@ -2,15 +2,15 @@ package src;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class Transaction implements Serializable 
 {
     private BigDecimal amount;
-    private Date date;
+    private LocalDateTime date;
     private String description;
 
-    public Transaction(BigDecimal amount, Date date, String description) {
+    public Transaction(BigDecimal amount, LocalDateTime date, String description) {
         this.amount = amount;
         this.date = date;
         this.description = description;
@@ -20,7 +20,7 @@ public class Transaction implements Serializable
         return amount;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 

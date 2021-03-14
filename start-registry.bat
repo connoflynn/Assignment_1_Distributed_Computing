@@ -1,0 +1,1 @@
+rmiregistry -J-Djava.rmi.server.codebase=file:\C:\Users\conno\Documents\College\Distributed_Systems_and_Co_Operative_Computing\Assignment_1\

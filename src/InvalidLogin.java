@@ -1,6 +1,6 @@
-package src.exception;
+package src;
 
-public class InvalidLogin extends Throwable{
+public class InvalidLogin extends Exception{
 
     public InvalidLogin() {
         super("Invalid Login Details!");

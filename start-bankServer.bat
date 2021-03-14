@@ -1,0 +1,1 @@
+java -cp C:\Users\conno\Documents\College\Distributed_Systems_and_Co_Operative_Computing\Assignment_1 -Djava.rmi.server.codebase=file:\C:\Users\conno\Documents\College\Distributed_Systems_and_Co_Operative_Computing\Assignment_1 -Djava.security.policy=server-windows.policy src.Bank

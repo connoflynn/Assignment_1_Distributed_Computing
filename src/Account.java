@@ -1,9 +1,11 @@
 package src;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
-public class Account {
+public class Account implements Serializable{
 	private int accountNumber;
     private String username;
     private String password;
@@ -11,12 +13,13 @@ public class Account {
     private List<Transaction> transactions;
     
     
-    public Account(int accNum, String username, String password, BigDecimal balance, List<Transaction> transactions) {
+    public Account(int accNum, String username, String password) {
     	this.accountNumber = accNum;
 		this.username = username;
 		this.password = password;
-		this.balance = balance;
-		this.transactions = transactions;
+		this.balance = new BigDecimal(0);
+		this.transactions = new ArrayList<Transaction>();
+
 	}
 
 	public int getAccountNumber() {
