@@ -18,12 +18,6 @@ public class Bank implements BankInterface {
     
     public Account createAccount(String username, String password) throws RemoteException {
     	int accNum = accounts.size() + 1;
-    	// for (Account account : accounts) {
-    	// 	if(username.equals(account.getUsername())) {
-    	// 		System.out.println("Username Already Exists!");
-        //         return;
-    	// 	}
-    	// }
         Account account = new Account(accNum, username, password);
     	accounts.add(account);
         System.out.println("New Account Created! Account number: " + account.getAccountNumber());
@@ -114,7 +108,6 @@ public class Bank implements BankInterface {
                 else{
                     for(Account account: accounts) {
                         if(accNum == account.getAccountNumber()) {
-                            System.out.println("Gets Here");
                             List<Transaction> validTransactions = new ArrayList<>();
                             List<Transaction> transactions = account.getTransactions();
                             for(Transaction transaction : transactions){
